@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.show {
+  display: flex !important;
+}
+
+.display-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  line-height: 1;
+  font-family: "Lato", sans-serif;
+  background-color: #0a0309;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+input.input-bar {
+  width: 25em;
+  height: 3em;
+  background-image: url("search.svg");
+  background: #180c17;
+
+  border: none;
+  font-size: 10pt;
+  color: #d0b4cc;
+  padding-left: 45px;
+}
+
+input.input-bar.login-input {
+  padding-left: 5px;
+  width: 250px;
+}
+
+nav div span {
+  position: absolute;
+  top: 15px;
+  margin-left: 10px;
+  margin-top: 17px;
+  z-index: 0;
+  color: #d0b4cc;
+}
+
+nav > div > a {
+  color: white;
+}
+
+nav > div > a:hover {
+  color: #82347a;
+}
+
+nav > div > a:nth-child(1) {
+  margin-right: 10px;
+}
+
+main.list-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 140px;
+  flex-direction: column;
+}
+
+main.list-items > section.items {
+  display: flex;
+}
+
+section.items > div.item {
+  margin: 20px;
+}
+
+section.items > div.item h1 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #ffff;
+  margin-top: 10px;
+}
+
+section.items > div.item p {
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffff;
+}
+
+div.infos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom-navbar {
+  background-color: #11020f;
+  position: fixed;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  display: none;
+}
+
+div.modal-form {
+  top: 0px;
+  right: 0;
+  position: fixed;
+  z-index: 1;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex;
+  align-items: center;
+  display: none;
+  justify-content: center;
+  background: rgba(30, 15, 28, 0.56);
+  color: white;
+}
+
+.modal-content {
+  background-color: #1e0f1c;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  align-items: initial;
+  justify-content: center;
+}
+
+form h1 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 49px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+form label {
+  margin-bottom: 11px;
+  font-weight: 300;
+}
+
+.btn {
+  border: none;
+  width: 50%;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.btn-principal {
+  background-color: #991d88;
+}
+
+.btn-secundario {
+  background-color: #3c0734;
+}
+
+div.btn-box > input {
+  margin-right: 5px;
+}
+
+form a {
+  text-align: center;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  color: #991d88;
+  text-decoration: none;
+}
+
+div.modal-content img {
+  position: relative;
+  left: 100%;
+  top: 10px;
+  height: 35px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+img.product-img {
+  transition: 0.4s;
+  cursor: pointer;
+  position: relative;
+  z-index: -1;
+}
+
+img.product-img:hover {
+  opacity: 0.4;
+}
+
+.container-img {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(30, 15, 28, 0.56);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.2s ease-in;
+}
+
+.overlay > span {
+  padding: 20px;
+  cursor: pointer;
+  background-color: #3c0734;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons > div {
+  margin-right: 20px;
+}
+
+span.counter-items-bag {
+  background-color: #991d88;
+  padding: 4px 6px;
+  border-radius: 50%;
+  opacity: 0.95;
+  top: 30px;
+}
+
+.counter-items-bag p {
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  nav.top-navbar {
+    width: 100%;
+  }
+
+  nav.top-navbar > div {
+    display: none;
+  }
+
+  nav > img.logo {
+    height: 80px;
+    width: 80px;
+    text-align: center;
+  }
+
+  main.list-items {
+    margin-top: 3rem;
+  }
+
+  main > section {
+    overflow-x: scroll;
+    width: 100%;
+  }
+
+  section.items {
+    margin-right: 20px;
+  }
+
+  main::after {
+    content: "";
+    margin-bottom: 70px;
+  }
+
+  .bottom-navbar {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    z-index: 2;
+    right: 0;
+  }
+  .bottom-navbar input.input-bar {
+    width: 20em;
+  }
+
+  nav div span {
+    top: 5px;
+  }
+
+  span.counter-items-bag {
+    top: 15px;
+  }
+
+  img.product-img {
+    width: 250px;
+  }
+}
