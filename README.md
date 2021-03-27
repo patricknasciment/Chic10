@@ -1,1 +1,1 @@
-<h1 align="center"> Chic10 <img src="./img/logo.png" /></h1>
+<h1 align="center" style:"background: black"><img src="./img/logo.png" /></h1>
