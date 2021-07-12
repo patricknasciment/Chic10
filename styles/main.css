@@ -1,0 +1,406 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*-------------------------------*/
+
+body {
+  background: linear-gradient(109.13deg, #1d0119 30.61%, #0f000f 100%);
+  display: flex;
+}
+
+/* MENU LATERAL */
+
+.menu-lateral {
+  width: 128px;
+  min-width: 128px;
+  height: 100vh;
+  background: linear-gradient(180deg, #2f002f 0%, #1d0119 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+.menu-lateral h1 {
+  margin-top: 42px;
+  margin-bottom: 74px;
+  font-family: Martel Sans;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.17em;
+  font-size: 11px;
+}
+
+.menu-lateral img {
+  width: 18px;
+  height: 18px;
+}
+
+.menu-lateral li {
+  margin-bottom: 16px;
+}
+
+a.logo {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a.logo:visited {
+  color: #ffffff;
+}
+
+.galeria {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+/* MAIN CONTENT */
+
+main.index-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+section {
+  transition: all 0.5s linear;
+}
+
+.text-field h1 {
+  font-family: David Libre;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 48px;
+}
+
+h2 {
+  margin-bottom: 64px;
+  font-family: Martel Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 145.19%;
+  letter-spacing: 0.17em;
+  color: #ffffff;
+}
+
+.text-field h3 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 105.19%;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.text-field h4 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 145.19%;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.text-field p.description {
+  font-family: Lato;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.31);
+  max-width: 330px;
+  min-height: 100px;
+  max-height: 100px;
+  margin-bottom: 32px;
+}
+
+.showcase-product {
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sub-photos {
+  display: flex;
+  margin-top: 14px;
+}
+
+.first-img {
+  margin-right: 12px;
+}
+
+.second-img {
+  margin-right: 12px;
+}
+
+.button-qtd-photos {
+  width: 75px;
+  height: 82px;
+  background: rgba(150, 0, 128, 0.17);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-qtd-photos .number-span {
+  font-family: Martel Sans;
+  font-size: 24px;
+}
+
+.button-qtd-photos .span-fotos {
+  font-family: Lato;
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: 0.265em;
+}
+
+.cores {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 32px;
+}
+
+.cores div {
+  margin-top: 16px;
+  width: 14px;
+  height: 14px;
+  background: rgba(223, 7, 201, 0.06);
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.cores div.active {
+  background: #542a1f;
+}
+
+.tamanhos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 420px;
+}
+
+.tamanhos > div {
+  margin-top: 10px;
+}
+
+.tamanhos div.tam {
+  height: 32px;
+  width: 32px;
+  background: rgba(223, 7, 201, 0.06);
+  margin-right: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tamanhos div.tam.active {
+  background-color: #df07c9;
+}
+
+.tamanhos div p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.add-bag a {
+  text-decoration: none;
+  padding: 7px 16px;
+  background: rgba(223, 7, 201, 0.06);
+  color: white;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.hold-tam {
+  display: flex;
+  align-items: center;
+}
+
+.text-content {
+  display: flex;
+}
+
+.matches {
+  margin-left: 128px;
+}
+
+.matches div {
+  display: flex;
+  flex-direction: column;
+}
+
+.matches div img {
+  margin-bottom: 16px;
+}
+
+div.proximo {
+  margin-right: 32px;
+}
+
+div.proximo img {
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+div.anterior {
+  cursor: pointer;
+  margin-left: 32px;
+}
+
+/* ------ JS ONLY ----- */
+
+.js-disable {
+  display: none;
+}
+
+.visuallyhidden {
+  opacity: 0;
+}
