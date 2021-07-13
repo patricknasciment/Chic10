@@ -1,6 +1,6 @@
 function loadContentProducts() {
   let search = 'model'
-  const API_KEY = ''
+  const API_KEY = 'xslX2V4vo5NL1r_S9ARnFAcGvaxRc6aVZa6uVQ3wkhE'
   const url = `https://api.unsplash.com/search/photos?query=${search}&per_page=12&client_id=${API_KEY}`
 
   fetch(url)

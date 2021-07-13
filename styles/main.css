@@ -161,6 +161,11 @@ body {
 .menu-lateral img {
   width: 18px;
   height: 18px;
+  transition: all 0.1s ease-in-out;
+}
+
+.menu-lateral img:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .menu-lateral li {
@@ -174,6 +179,29 @@ a.logo {
 
 a.logo:visited {
   color: #ffffff;
+}
+
+.search-button {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+input.search-input {
+  width: 0%;
+  height: 32px;
+  background-color: #0f000f;
+  border: none;
+  color: #ffffff;
+  opacity: 0;
+  transition: all 0.9s ease-in-out;
+  padding: 2px;
+}
+
+input.active {
+  width: 85%;
+  opacity: 1;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .galeria {
